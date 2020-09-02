@@ -25,10 +25,14 @@ a{
   font-size: 2rem;
   height: 90px;
   // width: 90px;
-
   padding-top: 30px;
   text-align: center;
   background: $tertiary;
   clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 
+}
+
+.controlSystemHeading{
+  text-align: center;
+  color: $primary;
 }
