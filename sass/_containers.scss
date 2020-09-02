@@ -1,0 +1,106 @@
+.row{
+  @include dimension(100%, auto);
+  // min-height: 100px;
+  // background: gray;
+}
+.col{
+  float:left;
+  min-height: 100px;
+}
+
+// clears the float after row
+.clearfix::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.col-1{
+  width: 100%/12*1;
+}
+
+.col-2 {
+width: 100%/12*2;
+
+}
+
+.col-3 {
+  width: 100%/12*3;
+  // background: blue;
+
+}
+.col-4{
+  width: 100%/12*4;
+}
+.col-5{
+  width: 100%/12*5;
+}
+.col-6{
+  width: 100%/12*6;
+}
+.col-7{
+  width: 100%/12*7;
+}
+.col-8{
+  width: 100%/12*8;
+}
+
+.col-9{
+  width: 100%/12*9;
+}
+.col-10{
+  width: 100%/12*10;
+}
+.col-11{
+  width: 100%/12*11;
+}
+.col-12{
+  width: 100%/12*12;
+}
+
+
+.title-div{
+  width:200px;
+  // display: block;
+  margin:20px auto;
+
+  // border:1px solid black;
+}
+.top-nav{
+  width:100%;
+  margin-top: 100px;
+  ul{
+    width:80%;
+    li{
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      background: $secondary;
+      border: 1px solid $primary;
+      margin: 5px auto;
+      padding: 10px;
+      font-size: 1.5rem;
+      a:link{
+        color: $tertiary;
+      }
+      a:visited{
+        color: $tertiary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.loginSection{
+  width:80%;
+  margin:auto;
+  background: $primary;
+  font-size: 1.2rem;
+}
+.input{
+  color: $secondary;
+  // text-align: center;
+  margin:20px auto;
+  height: 40px;
+  width: 120px;
+  display: block;
+}

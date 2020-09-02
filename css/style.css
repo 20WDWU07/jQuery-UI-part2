@@ -1,0 +1,115 @@
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  font-weight: 800; }
+
+h3 {
+  font-weight: 400; }
+
+p {
+  font-weight: 100; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.title {
+  font-family: 'Monotype Corsiva','Apple Chancery';
+  color: #4E7867;
+  font-size: 2rem;
+  height: 90px;
+  padding-top: 30px;
+  text-align: center;
+  background: #C1C44D;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); }
+
+.row {
+  width: 100%;
+  height: auto; }
+
+.col {
+  float: left;
+  min-height: 100px; }
+
+.clearfix::after {
+  clear: both;
+  display: table;
+  content: ""; }
+
+.col-1 {
+  width: 8.3333333333%; }
+
+.col-2 {
+  width: 16.6666666667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.3333333333%; }
+
+.col-5 {
+  width: 41.6666666667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.3333333333%; }
+
+.col-8 {
+  width: 66.6666666667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.3333333333%; }
+
+.col-11 {
+  width: 91.6666666667%; }
+
+.col-12 {
+  width: 100%; }
+
+.title-div {
+  width: 200px;
+  margin: 20px auto; }
+
+.top-nav {
+  width: 100%;
+  margin-top: 100px; }
+  .top-nav ul {
+    width: 80%; }
+    .top-nav ul li {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      background: #4E7867;
+      border: 1px solid #17343B;
+      margin: 5px auto;
+      padding: 10px;
+      font-size: 1.5rem; }
+      .top-nav ul li a:link {
+        color: #C1C44D; }
+      .top-nav ul li a:visited {
+        color: #C1C44D;
+        text-decoration: underline; }
+
+.loginSection {
+  width: 80%;
+  margin: auto;
+  background: #17343B;
+  font-size: 1.2rem; }
+
+.input {
+  color: #4E7867;
+  margin: 20px auto;
+  height: 40px;
+  width: 120px;
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */
