@@ -1,3 +1,8 @@
-.switcheOn, .switcheOff{
-  @include dimension(80px, auto);
+.switcheOn, .switcheOff, .powerOn, .powerOff{
+  @include dimension(50px, auto);
+  margin-left: 20px;
+}
+.tnOn, .tvOff{
+  @include dimension(100px, auto);
+  // margin-left: 20px;
 }

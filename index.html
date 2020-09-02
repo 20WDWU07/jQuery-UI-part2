@@ -20,17 +20,20 @@
     <nav class="top-nav">
       <ul class="top-nav-container">
         <li class="top-nav-list"><a id="smartHome" class="top-nav-link" href="#treaty">Smart home</a></li>
-        <li class="top-nav-list"><a id="shopclass="top-nav-link" href="#principles">Shop</a></li>
+        <li class="top-nav-list"><a id="shop" class="top-nav-link" href="#principles">Shop</a></li>
         <li class="top-nav-list"><a id="newUser" class="top-nav-link" href="#ideas">New user</a></li>
         <li class="top-nav-list"><a id="login" class="top-nav-link" href="#ideas">Login</a></li>
       </ul>
     </nav>
 
     <section id="loginSection" class="loginSection">
-      <input  id="username" type="text" name="username" value="Username" class="input"><br>
-      <input  id="password" type="password" name="password" value="Password" class="input"><br>
-      <br><br>
-      <button id="loginBtn" class="log" type="button" name="button">Login</button>
+      <form class="" action="index.html" method="post">
+        <input  id="username" type="text" name="username" value="Username" class="input"><br>
+        <input  id="password" type="password" name="password" value="Password" class="input"><br>
+        <br><br>
+        <button id="loginBtn" class="log" type="button" name="button">Login</button>
+      </form>
+
     </section>
 
     <section id="controlSection">
@@ -46,14 +49,59 @@
     </section>
 
     <section id="myDevices" class="myDevicesSection">
-      <h2 class="">Devices</h2>
-      <h4 class=""> Lights </h4>
-      <div class="switch">
-        <img id="switcheOn" class="switcheOn" src="images/switcheOn.jpg" alt="Switch On" />
-        <img id="switcheOff" class="switcheOff" src="images/switcheOff.jpg" alt="Switch Off" />
-      </div>
-      <div>
-        <i id="house" class="fas fa-home house"></i>
+      <h2 class="devices">Devices</h2>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Lights</a></li>
+          <li><a href="#tabs-2">TV</a></li>
+        </ul>
+        <div id="tabs-1">
+          <h4 id="lights" class="lights"> Lights </h4>
+          <div id="lightControl" class="">
+            <div class="switch">
+              <img id="switcheOn" class="switcheOn" src="images/switcheOn.jpg" alt="Switch On" />
+              <img id="switcheOff" class="switcheOff" src="images/switcheOff.jpg" alt="Switch Off" />
+              <i id="house" class="fas fa-home house"></i>
+            </div>
+            <div>
+
+            </div>
+            <form id="reservation">
+              <label for="minbeds">Intensity</label>
+              <select name="minbeds" id="minbeds">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div id="tabs-2">
+          <h4 id="tv" class="tv"> TV </h4>
+          <div id="tvControl" class="">
+            <div class="power">
+              <img id="powerOn" class="powerOn" src="images/powerOn.jpg" alt="Power On" />
+              <img id="powerOff" class="powerOff" src="images/powerOff.jpg" alt="Power Off" />
+            </div>
+            <div class="col col-sm-4">
+              <p>
+                <label for="amount">Volume:</label>
+                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+              </p>
+
+              <div id="slider-vertical" style="height:200px;"></div>
+
+            </div>
+
+            <div clas="col col-8">
+                <img src="images/tvOn.jpeg" alt="TV">
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
