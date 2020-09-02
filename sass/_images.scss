@@ -1,1 +1,3 @@
-
+.switcheOn, .switcheOff{
+  @include dimension(80px, auto);
+}

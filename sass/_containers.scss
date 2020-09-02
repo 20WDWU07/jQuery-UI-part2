@@ -94,12 +94,19 @@ width: 100%/12*2;
 
 
 
-.loginSection{
+.loginSection, .myDevicesSection{
   width:80%;
   margin:auto;
   background: $primary;
   font-size: 1.2rem;
+  color: $tertiary;
 }
+.myDevicesSection{
+  background: $tertiary;
+  color: $primary;
+}
+
+
 .input{
   color: $secondary;
   // text-align: center;

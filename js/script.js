@@ -23,4 +23,12 @@ $(document).ready(function(){
     $('#loginSection').hide();
     // $('nav').hide();
   });
+  $('#switcheOn').click(function(){
+    $('#house').css('color', 'yellow');
+
+  });
+  $('#switcheOff').click(function(){
+    $('#house').css('color', 'black');     
+
+  });
 });

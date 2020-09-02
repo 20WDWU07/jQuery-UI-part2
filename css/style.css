@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
   font-family: 'Montserrat', sans-serif; }
 
@@ -29,6 +34,9 @@ a {
 .controlSystemHeading {
   text-align: center;
   color: #17343B; }
+
+.house {
+  font-size: 200px; }
 
 .row {
   width: 100%;
@@ -103,11 +111,16 @@ a {
         color: #C1C44D;
         text-decoration: underline; }
 
-.loginSection {
+.loginSection, .myDevicesSection {
   width: 80%;
   margin: auto;
   background: #17343B;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  color: #C1C44D; }
+
+.myDevicesSection {
+  background: #C1C44D;
+  color: #17343B; }
 
 .input {
   color: #4E7867;
@@ -115,5 +128,9 @@ a {
   height: 40px;
   width: 120px;
   display: block; }
+
+.switcheOn, .switcheOff {
+  width: 80px;
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */
