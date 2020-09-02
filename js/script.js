@@ -1,5 +1,5 @@
 console.log('js');
-  $('#loginSection, #controlSection, #myDevices, #switcheOff').hide();
+  $('#loginSection, #controlSection, #myDevices, #reservation, #switcheOff').hide();
 
 
 $(document).ready(function(){
@@ -24,15 +24,48 @@ $(document).ready(function(){
     // $('nav').hide();
   });
   $('#switcheOn').click(function(){
-    $('#house').css('color', 'yellow');
+    $('#house').css('color', 'yellow').css('opacity','0.1').css('border','2px solid black');
     $('#switcheOff').show();
-      $('#switcheOn').hide();
-
+    $('#switcheOn').hide();
+    $('#reservation').show();
+    // if (parseInt(document.getElementById('minbeds').value) <=3){
+    //   $('#house').css('color', 'yellow').css('opacity','0.5');
+    // } else if (parseInt(document.getElementById('minbeds').value) > 3){
+    //   $('#house').css('color', 'yellow').css('opacity','1');
+    // }
+    $('#minbeds').change(function(){
+      // if (parseInt(document.getElementById('minbeds').value) <=3){
+      //   $('#house').css('color', 'yellow').css('opacity','0.5');
+      // } else if (parseInt(document.getElementById('minbeds').value) > 3){
+      //   $('#house').css('color', 'yellow').css('opacity','1');
+      // }
+      switch (parseInt(document.getElementById('minbeds').value)){
+        case 1:
+          $('#house').css('color', 'yellow').css('opacity','0.2');
+          break;
+        case 2:
+        $('#house').css('color', 'yellow').css('opacity','0.3');
+          break;
+        case 3:
+          $('#house').css('color', 'yellow').css('opacity','0.5');
+          break;
+        case 4:
+          $('#house').css('color', 'yellow').css('opacity','0.7');
+          break;
+        case 5:
+          $('#house').css('color', 'yellow').css('opacity','0.9');
+          break;
+        default:
+          $('#house').css('color', 'yellow').css('opacity','1');
+      }
+    });
   });
+
   $('#switcheOff').click(function(){
     $('#house').css('color', 'black');
     $('#switcheOff').hide();
     $('#switcheOn').show();
+    $('#reservation').hide();
 
   });
   $('#lights').click(function(){
