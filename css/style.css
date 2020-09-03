@@ -27,9 +27,7 @@ a {
   font-size: 2rem;
   height: 90px;
   padding-top: 30px;
-  text-align: center;
-  background: #C1C44D;
-  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); }
+  text-align: center; }
 
 .controlSystemHeading {
   text-align: center;
@@ -98,7 +96,13 @@ a {
 
 .title-div {
   width: 200px;
-  margin: 20px auto; }
+  background: #C1C44D;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  margin: 20px auto;
+  transition: all 3s;
+  transition-timing: ease-in-out; }
+  .title-div:hover {
+    transform: rotate(1080deg); }
 
 .top-nav, .control-nav {
   width: 100%;
@@ -148,13 +152,26 @@ form {
 .minbeds {
   margin-bottom: 30px; }
 
+.tv {
+  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+  /* IE 9 */
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+  /* Standard syntax */ }
+
 .switcheOn, .switcheOff, .powerOn, .powerOff {
   width: 50px;
   height: auto;
   margin-left: 20px; }
 
-.tnOn, .tvOff {
-  width: 100px;
-  height: auto; }
+.tvOn, .tvOff {
+  width: 300px;
+  height: auto;
+  transition: transform 1s;
+  transition-timing: ease-in-out; }
+  .tvOn:hover, .tvOff:hover {
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    /* IE 9 */
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    /* Standard syntax */ }
 
 /*# sourceMappingURL=style.css.map */

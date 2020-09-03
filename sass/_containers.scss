@@ -61,11 +61,28 @@ width: 100%/12*2;
 
 .title-div{
   width:200px;
+  background: $tertiary;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
   // display: block;
   margin:20px auto;
 
-  // border:1px solid black;
-}
+  // example 1
+  transition: all 3s;
+  transition-timing: ease-in-out;
+  &:hover {
+   transform: rotate(1080deg);
+ }
+ // example2
+ //  transition: transform 1s;
+ //  transition-timing: ease-in-out;
+ //  &:hover{
+ //    // transform: translate(20px, 20px);
+ // //    -ms-transform: skew(20deg); /* IE 9 */
+ // // transform: skew(20deg); /* Standard syntax */
+ // -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+ // transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
+  }
+
 .top-nav, .control-nav{
   width:100%;
   margin-top: 100px;
@@ -123,4 +140,8 @@ form{
 }
 .minbeds{
   margin-bottom: 30px;
+}
+.tv{
+  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+  transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
 }
