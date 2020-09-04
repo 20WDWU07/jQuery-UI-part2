@@ -166,12 +166,25 @@ form {
 .tvOn, .tvOff {
   width: 300px;
   height: auto;
-  transition: transform 1s;
+  transition: transform 5s;
+  transition-delay: 2s;
   transition-timing: ease-in-out; }
   .tvOn:hover, .tvOff:hover {
-    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
-    /* IE 9 */
-    transform: matrix(1, -0.3, 0, 1, 0, 0);
-    /* Standard syntax */ }
+    transform: scaleY(2); }
+
+body {
+  background: black;
+  animation-name: example;
+  animation-duration: 4s; }
+
+@keyframes example {
+  0% {
+    background-color: #C1C44D; }
+  25% {
+    background-color: #4E7867; }
+  50% {
+    background-color: #17343B; }
+  100% {
+    background-color: black; } }
 
 /*# sourceMappingURL=style.css.map */

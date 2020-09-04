@@ -16,7 +16,23 @@
 
 
 body{
-  // background: pink;
+  background: black;
+  animation-name: example;//watch the name is example
+  animation-duration: 4s;
+}
+
+// so use the same name example. if you change, see that you change in both places
+@keyframes example {
+  // from {background-color: black;}
+  // to {background-color: gray;}
+
+//how many percentave of each color while changing
+  0%   {background-color: $tertiary;}
+  25%  {background-color: $secondary;}
+  50%  {background-color: $primary;}
+  100% {background-color: black;}
+
+
 }
 
 // #resizable { width: 150px; height: 150px; padding: 0.5em; }

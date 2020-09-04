@@ -4,11 +4,16 @@
 }
 .tvOn, .tvOff{
   @include dimension(300px, auto);
-  transition: transform 1s;
+  transition: transform 5s;
+  transition-delay: 2s;
   transition-timing: ease-in-out;
   &:hover{
-  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
-  transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
+  // -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+  // transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
   // margin-left: 20px;
+  // transform: rotate(1080deg);
+  // transform: skew(20deg, 40deg);
+  // transform: translate(-100px,50px);
+  transform: scaleY(2);
 }
 }
